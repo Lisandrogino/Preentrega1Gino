@@ -1,14 +1,35 @@
-import {AppBar, Button, Toolbar} from '@mui/material'
+import {AppBar, Button, Toolbar, Typography} from '@mui/material'
 import './NavBar.css';
+import CartWidget from '../CartWidget/CartWidget';
 
 const NavBar = () => {
     return ( 
      <AppBar>
         <Toolbar>
 
-            <Button>
+            <div>
+                <Typography sx={{ color: "black" }}>
+                Little Love
+                </Typography>
+            </div>
+
+            <div>
+                <Button sx={{color: "black"}}>
                 Inicio
-            </Button>
+                </Button>
+                 <Button sx={{color: "black"}}>
+                Tienda
+                </Button>
+                <Button sx={{color: "black"}}>
+                Contacto
+                </Button>
+            </div>   
+                <CartWidget />
+            <div>
+        
+                
+
+            </div> 
             
         </Toolbar>
 
