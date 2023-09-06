@@ -1,0 +1,16 @@
+
+
+.contaierContainer{
+    background-color: #E5989B;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+

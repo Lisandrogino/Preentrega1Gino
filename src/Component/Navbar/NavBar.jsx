@@ -1,19 +1,25 @@
 import {AppBar, Button, Toolbar, Typography} from '@mui/material'
 import './NavBar.css';
 import CartWidget from '../CartWidget/CartWidget';
+import ChildCareIcon from '@mui/icons-material/ChildCare';
 
 const NavBar = () => {
     return ( 
      <AppBar>
-        <Toolbar>
+        <Toolbar className='contaierContainer'>
 
-            <div>
+            
+
+            <div className='logoContainer'>
+
+                 <ChildCareIcon className='icon'  /> 
+
                 <Typography sx={{ color: "black" }}>
                 Little Love
                 </Typography>
             </div>
 
-            <div>
+            <div className='menuContainer'>
                 <Button sx={{color: "black"}}>
                 Inicio
                 </Button>
@@ -24,12 +30,14 @@ const NavBar = () => {
                 Contacto
                 </Button>
             </div>   
-                <CartWidget />
-            <div>
+               
+            <div className='cartContainer'>
         
-                
+                <CartWidget /> 
 
             </div> 
+
+            
             
         </Toolbar>
 
