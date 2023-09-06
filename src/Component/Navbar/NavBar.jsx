@@ -1,8 +1,14 @@
+import {AppBarr, Toolbar} from '@mui/material'
 import './NavBar.css';
 
 const NavBar = () => {
     return ( 
-       <h1>funciona</h1>
+     <AppBarr>
+        <Toolbar>
+            
+        </Toolbar>
+
+     </AppBarr>
        
        
     );
